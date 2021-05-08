@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import OrderDetails from '../order-details';
 import { Button, CurrencyIcon } from '@ya.praktikum/react-developer-burger-ui-components'
+import currencyIconPath from '../../images/currency.svg'
 import styles from './index.module.css';
 
 interface Props {
@@ -15,7 +16,8 @@ const BurgerTotal: React.FC<Props> = ({ totalPrice }) => {
     
     const modal = visible ? (<OrderDetails onClose={closeModal} />) : null;
     return (<div className={`${styles.totalContainer} pt-6 pr-4`}>
-                <p className={'text text_type_digits-medium pr-10'}>{totalPrice} <CurrencyIcon type={'primary'} /></p>
+                <p className={'text text_type_digits-medium'}>{totalPrice}</p>
+                <img src={currencyIconPath} alt={'currency'} className={`${styles.totalImg} pr-10`} />
                 <Button type="primary" size="medium" onClick={openModal}>
                     Оформить заказ
                 </Button>
