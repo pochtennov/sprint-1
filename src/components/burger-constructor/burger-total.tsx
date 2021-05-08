@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import OrderDetails from '../order-details';
-import { Button, CurrencyIcon } from '@ya.praktikum/react-developer-burger-ui-components'
+import { Button } from '@ya.praktikum/react-developer-burger-ui-components'
 import currencyIconPath from '../../images/currency.svg'
 import styles from './index.module.css';
 

@@ -26,7 +26,7 @@ const IngredientsGroup: React.FC<Props> = ({ groupName, groupIngredients }) => {
     return (<li style={{ display: 'flex', flexDirection: 'column' }}>
                 <h4 className={'text text_type_main-medium pb-6'} style={{textAlign: 'left'}}>{groupName}</h4>
                 <ul className={`pr-4 pl-4 pb-2 ${styles.ingredientCardsContainer}`}>
-                  {groupIngredients.map((ingredient, ind) => <IngredientCard ingredient={ingredient} count={ind % 2 ? 0 : 1} key={ingredient._id} />)}
+                  {groupIngredients.map((ingredient, ind) => <IngredientCard ingredient={ingredient} count={ind % 2 ? 0 : 1} key={ind} />)}
                 </ul>
             </li>)
 }
