@@ -28,7 +28,7 @@ const IngredientCard: React.FC<Props> = ({ingredient, count}) => {
     const [visible, setVisibility] = React.useState(false);
     const openModal = () => setVisibility(true);
 
-    // я не могу понять почему именно тут не работает клик на крестик, все перепробывал. Функция запускается, но стейт не обновляется
+    // я не могу понять почему именно тут не работает клик на крестик, все перепробовал. Функция запускается, но стейт не обновляется
     // причем в другом модальном окне все работает, хотя логика такая же
 
     const closeModal = () => setVisibility(false);
