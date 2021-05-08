@@ -1,0 +1,25 @@
+.image {
+    margin: 0 auto;
+    width: 480px;
+}
+
+.ingredientName {
+    text-align: center;
+    width: 520px;
+    margin: 0 auto;
+}
+
+.ingredientDescription {
+    text-align: center;
+    width: 520px;
+    margin: 0 auto;
+}
+
+.infoContainer {
+    width: 520px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
