@@ -1,7 +1,7 @@
 .modalContent {
     position: fixed;
     top: 180px;
-    left: 640px;
+    left: calc((100vw - 720px) / 2);
     background-color: #1C1C21;
     border-radius: 40px;
     display: flex;
@@ -21,3 +21,11 @@
   top: 0;
   left: 0;
 }
+
+/* @media screen and (max-width: 1650px) {
+  .modalContent {
+    padding-left: 0;
+    padding-right: 0;
+  }
+} */
+
