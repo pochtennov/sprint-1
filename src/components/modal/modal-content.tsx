@@ -12,7 +12,7 @@ const ModalContent: React.FC<Props> = ({ headerText, children, onClose }) => {
     return (<div className={styles.modalContent}>
               <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center', height: '64px'}} className={'mt-10 ml-10 mr-10'}>
                 {headerText && <h3 className={'text text_type_main-large'} style={{marginRight: 'auto'}}>{headerText}</h3>}
-                <CloseIcon onClick={() => onClose()} type={'primary'} />
+                <CloseIcon onClick={onClose} type={'primary'} />
               </div>
               {children}
             </div>)
