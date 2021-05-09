@@ -8,7 +8,7 @@ interface Props {
 const ModalOverlay: React.FC<Props> = ({ onClose }) => {
 
     const closeModal = (event: any) => {
-        if (event.key === "Escape" || event.target.id === 'modalOverlay') onClose();
+        if (event.key === "Escape" || event.target.id === 'modalOverlay' || event.target.id === 'closeIcon' ) onClose();
     }
 
     React.useEffect(() => {

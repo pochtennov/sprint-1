@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { CloseIcon } from '@ya.praktikum/react-developer-burger-ui-components';
+import closeIcon from '../../images/closeIcon.svg'
 import styles from './index.module.css';
 
 interface Props {
@@ -12,7 +12,8 @@ const ModalContent: React.FC<Props> = ({ headerText, children, onClose }) => {
     return (<div className={styles.modalContent}>
               <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center', height: '64px'}} className={'mt-10 ml-10 mr-10'}>
                 {headerText && <h3 className={'text text_type_main-large'} style={{marginRight: 'auto'}}>{headerText}</h3>}
-                <CloseIcon onClick={onClose} type={'primary'} />
+                {/* icon from the lib works shitty, that's why img */}
+                <img id={'closeIcon'} style={{ margin: '3px' }} src={closeIcon} alt='close modal' />
               </div>
               {children}
             </div>)

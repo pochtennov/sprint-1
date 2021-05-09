@@ -9,7 +9,11 @@ function App() {
   const [ingredients, setIngredients] = React.useState([]);
   React.useEffect(() => {
     fetch(apiUrl)
-      .then(data => data.json())
+      .then(res => {
+        if (!res.ok) {
+          throw new Error('Response is not OK');
+        }
+        return res.json()})
       .then(data => setIngredients(data.data))
       .catch(err => console.log(err))
   }, [])
