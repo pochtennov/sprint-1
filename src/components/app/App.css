@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  width: 1240px;
+  gap: 40px;
+  margin: auto;
+}

@@ -1,0 +1,53 @@
+.container {
+    width: 600px;
+    max-height: 912px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.ingredientCardsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ingredientsContainer {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.ingredientsContainer::-webkit-scrollbar-track
+{
+	background-color: #2F2F37;
+    margin-bottom: 52px;
+}
+
+.ingredientsContainer::-webkit-scrollbar
+{
+	width: 8px;
+}
+
+.ingredientsContainer::-webkit-scrollbar-thumb
+{
+	background-color: #8585AD;
+}
+
+.ingredientCard {
+    display: flex;
+    flex-direction: column;
+    height: 208px;
+    width: 272px;
+    position: relative;
+    align-items: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
